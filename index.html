@@ -1,707 +1,281 @@
-﻿<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="Content-Style-Type" content="text/css" />
-        <meta http-equiv="Content-Script-Type" content="text/javascript" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" CONTENT="Kris Lito, Web Developer,London,UK,Project development,Web Design">
-        <meta name="keywords" CONTENT="Kris Lito, Web developer,Web Design, Coding, Cheap Website,Affordable Website,Essex Web Design,UK,London Web Developer">
-        <link rel="icon" type="image/x-icon" href="kristo_main/assets/img/favicon.ico">
-        <link rel="canonical" href="https://www.krislito.com" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D35D42Q40L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D35D42Q40L');
-</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     
-        </script>
-        <script>
-//             $(document).ready(function() {
-//     alert(window.innerWidth)
-// });
-$(document).on("click",".btnSendEmail",function(e) {
-    alert("Email sent.")
-});
-
-          $(document).on("click",".scrollTo",function(e) {
-       
-          var el = $(this).attr("href");
-          el = el.replace("#",".")
-          var newEl = $(".main").find(el);
-           $('html, body').animate({
-        scrollTop: $(newEl).offset().top
-    }, 1100,);
-
-    return false;
-});
-            </script>
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
-
-        <!--=============== BOXICONS ===============-->
-    
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="../kristo_main/assets/css/swiper-bundle.min.css">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="../kristo_main/assets/css/styles.css">
-        <script src="../kristo_main/assets/js/main.js"></script>
-        <script src="../kristo_main/assets/js/mixitup.min.js"></script>
-        <script src="../kristo_main/assets/js/scrollreveal.min.js"></script>
-        <script src="../kristo_main/assets/js/swiper-bundle.min.js"></script>
-        <title> Kris Lito Web Developer based in London</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-             <a href="#" class="nav__logo">Kris_Dev</a>
-             <div class="nav__menu">
-                 <ul class="nav__list">
-
-                     <li class="nav__item">
-                         <a href="#home" class="nav__link home scrollTo" id="home">
-                             <i class="bx bx-home-alt"></i>
-                         </a>
-                     </li>
-
-                     <li class="nav__item">
-                        <a href="#about" class="nav__link about scrollTo" id="about" >
-                            <i class='bx bx-user'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item skills">
-                        <a href="#skills" class="nav__link scrollTo" id="skills">
-                            <i class='bx bx-book'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item work">
-                        <a href="#work" class="nav__link scrollTo" id="work">
-                            <i class='bx bx-briefcase-alt-2'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item contact">
-                        <a href="#contact" class="nav__link scrollTo" id="contact">
-                            <i class='bx bx-message-square-detail'></i>
-                        </a>
-                    </li>
-
-                 </ul>
-             </div>
-             <i class='bx bx-moon change-theme' id="theme-button"></i>
-
-            </nav>
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-
-                    <div class="home__data">
-                        <span class="home__greeting">Hello, I'm</span>
-                        <h1 class="home__name">Kris Lito</h1>
-                        <h3 class="home__education">Web Developer</h3>
-                        <h4 style="padding-bottom:0.75rem;">&#128187;</h4>
-                   
-
-                        <div class="home__buttons">
-                            <a download="" href="kristo_main/assets/pdf/K.LitoCV.pdf" class="button button--ghost">
-                                Download CV
-                            </a>
-                            <a href="#about" class="button scrollTo">About me</a>
-                        </div>
-                    </div>
-
-                    <div class="home__handle">
-                        <img src="kristo_main/assets/img/kr3.png"  class="home__img">
-                    </div>
-                    <div class="home__social"> 
-                        <a href="https://www.linkedin.com/in/kris-lito-363853ab/" target="_blank" class="home__social-link">
-                            <i class='bx bxl-linkedin-square'></i>
-
-                        </a>
-                        <a href="https://github.com/Kristolito" target="_blank" class="home__social-link">
-                            <i class='bx bxl-github'></i>
-                        </a>
-                        <a href="https://stackoverflow.com/users/3212904/kristo" target="_blank" class="home__social-link">
-                            <i class='bx bxl-stack-overflow'></i>        
-                        </a>
-                    </div>
-                    <a href="#about" class="home__scroll">
-                        <i class='bx bx-mouse home__scroll-icon'></i>
-                        <span class="home__scroll-name">
-                            Scroll Down
-                        </span>
-
-                    </a>
-                </div>
-            </section>
-            
-            <!--=============== ABOUT ===============-->
-            <section class="about section" id="about">
-                <span class="section__subtitle">My Intro</span>
-                <h2 class="section__title">About Me</h2>
-                <div class="about__container container grid"> 
-                    <img src="kristo_main/assets/img/about.jpg"  class="about__img">
-
-                    <div class="about__data">
-                        <div class="about__info">   
-                            <div class="div about__box">
-                                <i class='bx bx-award about__icon'></i>
-                                <h3 class="about__title">Experience</h3>
-                                    <span class="about__subtitle">  
-                                        8 years working
-                                    </span>
-                            </div>
-
-                            <div class="div about__box">
-                                <i class='bx bx-briefcase-alt about__icon' ></i>
-                                <h3 class="about__title">Completed</h3>
-                                    <span class="about__subtitle">  
-                                       5 projects
-                                    </span>
-                            </div>
-
-                            <div class="div about__box">
-                                <i class='bx bx-support about__icon'></i>
-                                <h3 class="about__title">Support</h3>
-                                    <span class="about__subtitle">  
-                                        Online 24/7
-                                    </span>
-                            </div>
-                        </div>
-                        <p class="about__description">
-                            Hey there, Welcome to my website, I am Kris a web developer and a technology enthusiast based in London UK.
-                            I love coding & some of my hobbies are going to the gym, playing video games & learning new things :)
-                            If you have any questions feel free to ask me.
-                        </p>
-                            <a href="#contact" class="button scrollTo">Contact Me</a>
-                    </div>
-                 </div>
-            </section>
-
-            <!--=============== SKILLS ===============-->
-            <section class="skills section" id="skills">
-                <span class="section__subtitle">
-                    My Abilities
-                </span>
-                <h2 class="section__title">
-                    My Experience
-                </h2>
-                <div class="skills__container container grid">
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            Front-End 
-                        </h3>
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Javascript | jQuery</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Firebase</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Bootstrap</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                           Back-End
-                        </h3>
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">C# | VB | .Net | MVC</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Mysql/SQL Server</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">AWS | Azure</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">LINQ</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">No Sql Dbs</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                           Mobile Apps
-                        </h3>
-                        <div class="skills__box">
-                            <div class="skills__group">
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">Android Studio(JAVA)</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">XAMARIN(C#)</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-                                    <div>
-                                        <h3 class="skills__name">React Native</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== SERVICES ===============-->
-            <section class="services section">
-                <span class="section__subtitle">My Services</span>
-                <h3 class="section__title">What I Offer</h3>
-
-                <div class="skills__container container grid">
-                    <div class="services__card">
-                        <h3 class="services__title">
-                                Project Development
-                        </h3>
-
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow-alt services__icon' ></i>
-                        </span>
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">
-                                    Project Development
-                                </h3>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Bespoke Systems
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Simple WebSites
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            WordPress Development
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Mobile Apps
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services__card">
-                        <h3 class="services__title">
-                            SQL Support
-                        </h3>
-
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow-alt services__icon' ></i>
-                        </span>
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">
-                                    SQL Support
-                                </h3>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            MySQL DB SetUp
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            SQL Server Set up
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Help with DB optimisations
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Reports via DB
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services__card">
-                        <h3 class="services__title">
-                            Web Design
-                        </h3>
-
-                        <span class="services__button">
-                            See more <i class='bx bx-right-arrow-alt services__icon' ></i>
-                        </span>
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-
-                                <i class='bx bx-x services__modal-close'></i>
-
-                                <h3 class="services__modal-title">
-                                    Web Design
-                                </h3>
-
-                                <ul class="services__modal-list">
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Photoshop to HTML & CSS
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Website Ideas
-                                        </p>
-                                    </li>
-
-                                    <li class="services__modal-item">
-                                        <i class='bx bx-check services__modal-icon'></i>
-                                        <p class="services__modal-info">
-                                            Logo Design
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--=============== WORK ===============-->
-            <section class="work section" id="work">
-                <span class="section__subtitle">
-                    My Portfolio
-                </span>
-                <h2 class="section__title">Recent Work</h2>
-
-                <div class="work__filters">
-                    <span class="work__item active-work" data-filter='all'>All</span>
-                    <span class="work__item" data-filter='.web'>Web</span>
-                    <span class="work__item" data-filter='.xxx'>Web Apps</span>
-                    <span class="work__item" data-filter='.design'>Design</span>
-                </div>
-
-                <div class="work__container container grid">
-                    <div class="work__card mix web">
-                     <img src="kristo_main/assets/img/work1.png"  class="work__img">
-                     <h3 class="work__title">
-                            Chat app
-                     </h3>
-                     <a href="https://repetselia-chat.netlify.app/" target="_blank" class="work__button">
-                       Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                     </a>
-                    </div>
-
-                    <div class="work__card mix web">
-                        <img src="kristo_main/assets/img/work55.png"  class="work__img">
-                        <h3 class="work__title">
-                                Admin Dashboard
-                        </h3>
-                        <a href="https://admindashboarddesign.netlify.app/" target="_blank" class="work__button">
-                          Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
-
-                       <div class="work__card mix web">
-                        <img src="kristo_main/assets/img/work66.png"  class="work__img">
-                        <h3 class="work__title">
-                        To do App
-                        </h3>
-                        <a href="https://todolito.netlify.app/" target="_blank"  class="work__button">
-                          Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
-                       </div>
-
-                </div>
-            </section>
-
-            <!--=============== TESTIMONIALS ===============-->
-            <section class="testimonial section">
-                <span class="section__subtitle">
-                    My clients say
-                </span>
-                <h2 class="section__title">Testimonial</h2>
-
-                <div class="testimonial__container container swiper">
-                    <div class="swiper-wrapper">
-                        <div class="testimonial__card swiper-slide">
-                            <h3 class="testimonial__name">PanDragon </h3>
-                            <p class="testimonial__description">
-                                Kris is very professional and efficient with his work.Always happy to help.
-                            </p>
-                        </div>
-                        <div class="testimonial__card swiper-slide">
-                            <h3 class="testimonial__name">Maria </h3>
-                            <p class="testimonial__description">
-                                Thank you so much with helping me with my website Kris.
-                            </p>
-                        </div>
-                        <div class="testimonial__card swiper-slide">
-                            <h3 class="testimonial__name">Nikki </h3>
-                            <p class="testimonial__description">
-                                Very skilled web developer, thanks for your help Kris.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--=============== CONTACT ===============-->
-            <section class="contact section" id="contact">
-                <span class="section__subtitle">Get in touch</span>
-                <h2 class="section__title">Contact Me</h2>
-
-                <div class="contact__container container grid">
-                    <div class="contact__content">
-                    <h3 class="contact__title">Talk to me</h3>
-
-                    <div class="contact__info">
-
-                        <div class="contact__card">
-                            <i class='bx bx-envelope contact__card-icon' ></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact_-card-data">kristolito@hotmail.co.uk</span>
-                            <a href="mailto:kristolito@hotmail.co.uk" target="_blank"class="contact__button">
-                                Mail me<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
-                            </a>
-                        </div>
-                        <div class="contact__card">
-                            <i class='bx bx-phone contact__card-icon' ></i>
-                            <h3 class="contact__card-title">Phone</h3>
-                            <span class="contact_-card-data">07751317394</span>
-                            <a href="" target="_blank"class="contact__button">
-                                Call me<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
-                            </a>
-                        </div>
-                        <div class="contact__card">
-                            <i class='bx bxl-messenger' ></i>
-                            <h3 class="contact__card-title contact__card-icon">Messenger</h3>
-                            <span class="contact_-card-data">Xrhstos Litos</span>
-                            <a href="https://m.me/xrhstos.litos" target="_blank"class="contact__button">
-                                Message me<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    </div>
-
-                    <div class="contact__content">
-                        <h3 class="contact__title">Lets discuss your project</h3>
-
-                        <form action="https://formsubmit.co/24dd6c6cc306db1eba1011c7c4a98ce3" class="contact__form" method="POST">
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">
-                                    Name
-                                </label>
-                                <input type="text" name="name" placeholder="Your Name" class="contact__form-input oname">
-                            </div>
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">
-                                    Email
-                                </label>
-                                <input type="text" name="email" placeholder="Your Email"  class="contact__form-input oaddr" required>
-                            </div>
-                            <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">
-                                    Your Message
-                                </label>
-                             <textarea name="message" id="" cols="30" rows="10" placeholder="Your message here"  class="contact__form-input omsg">
-
-                             </textarea>
-                            </div>
-                            <input type="hidden" name="_next" value="http://krislito.com/">
-                            <input type="hidden" name="_captcha" value="false">
-
-                            <button class="button btnSendEmail xxxx"> Send Message</button>   
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer">
-            <div class="footer__container container grid">
-                <h1 class="footer__title">Kris Lito</h1>
-                <ul class="footer__list">
-                    <li>
-                        <a href="#about" class="footer__link"> About</a>
-                    </li>
-                    <li>
-                        <a href="#work" class="footer__link"> Projects</a>
-                    </li>
-                    <li>
-                        <a href="#testimonial" class="footer__link"> Testimonial</a>
-                    </li>
-                </ul>
-                <ul class="footer__social">
-                     <a href="https://www.facebook.com/xrhstos.litos" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-facebook-circle' ></i>
-                     </a>
-                     <a href="https://stackoverflow.com/users/3212904/kristo" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-stack-overflow' ></i>
-                     </a>
-                     <a href="https://github.com/Kristolito" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-github' ></i>
-                     </a>
-                </ul>
-                <span class="footer__copy">
-                    &#169; Made with &#10084;&#65039; by Kris - 2022. All rights reserved.
-                </span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kris Lito is a London-based software and web developer with 8+ years of experience building database-driven web applications, internal tools, and responsive interfaces.">
+    <meta name="keywords" content="Kris Lito, software developer, web developer, London, C#, .NET, SQL, JavaScript, Python">
+    <link rel="canonical" href="https://www.krislito.com">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Kris Lito | Software Developer</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D35D42Q40L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-D35D42Q40L');
+    </script>
+</head>
+<body>
+    <header class="site-header" id="header">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a href="#home" class="nav__logo">Kris Lito</a>
+
+            <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <i class="bx bx-menu"></i>
+            </button>
+
+            <div class="nav__menu" id="nav-menu">
+                <a href="#about" class="nav__link">About</a>
+                <a href="#experience" class="nav__link">Experience</a>
+                <a href="#skills" class="nav__link">Skills</a>
+                <a href="#work" class="nav__link">Projects</a>
+                <a href="#contact" class="nav__link">Contact</a>
             </div>
-        </footer>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+            <button class="theme-toggle" id="theme-button" type="button" aria-label="Toggle theme">
+                <i class="bx bx-moon"></i>
+            </button>
+        </nav>
+    </header>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <p class="eyebrow">London-based software developer</p>
+                    <h1>Kris Lito</h1>
+                    <p class="hero__lead">
+                        I build practical web applications, internal systems, and database-driven tools that help teams work faster and make better decisions.
+                    </p>
 
-        <!--=============== MIXITUP FILTER ===============-->
-        <script src=""></script>
+                    <div class="hero__actions" aria-label="Primary actions">
+                        <a class="button" href="#experience">View experience</a>
+                        <a class="button button--secondary" href="assets/pdf/K.Lito_CV.pdf" download>Download CV</a>
+                    </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src=""></script>
-    </body>
+                    <div class="hero__meta" aria-label="Professional summary">
+                        <div>
+                            <strong>8+ years</strong>
+                            <span>commercial experience</span>
+                        </div>
+                        <div>
+                            <strong>C# / .NET</strong>
+                            <span>web and business systems</span>
+                        </div>
+                        <div>
+                            <strong>SQL</strong>
+                            <span>reports, data, and integrations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="hero__profile" aria-label="Profile summary">
+                    <div class="code-card">
+                        <div class="code-card__header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="code-card__body" aria-hidden="true">
+                            <div class="code-line code-line--long"></div>
+                            <div class="code-line code-line--medium"></div>
+                            <div class="code-line code-line--short"></div>
+                            <div class="code-card__terminal">
+                                <span class="terminal-prompt">&gt;</span>
+                                <span class="terminal-text">build reliable software</span>
+                                <span class="terminal-cursor"></span>
+                            </div>
+                        </div>
+                        <div class="code-card__footer">
+                            <span><i class="bx bx-code-curly"></i> Full stack</span>
+                            <span><i class="bx bx-data"></i> SQL</span>
+                            <span><i class="bx bx-chip"></i> AI assisted</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section--light" id="about">
+            <div class="container about">
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h2>Practical developer with a calm, people-first approach.</h2>
+                </div>
+                <div class="about__copy">
+                    <p>
+                        I am a web and software developer based in London, with experience across front-end interfaces, back-end systems, databases, reporting, and mobile app development.
+                    </p>
+                    <p>
+                        Recruiters usually know me best as someone who can understand a business problem, work across the stack, and deliver dependable features without overcomplicating the solution. I also use AI-assisted development tools thoughtfully for research, debugging, refactoring, and faster delivery.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Commercial development experience, clearly mapped.</h2>
+                    <p>Full role details can be discussed directly, with the focus here on responsibilities, tools, and impact.</p>
+                </div>
+
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <div class="experience-card__date">2017 - Present</div>
+                        <div>
+                            <h3>Software / Web Developer</h3>
+                            <p class="experience-card__location">London, UK</p>
+                            <ul class="check-list">
+                                <li>Build and maintain bespoke web applications and internal business systems.</li>
+                                <li>Develop database-backed features, reporting tools, and SQL workflows.</li>
+                                <li>Work across C#, .NET, MVC, JavaScript, jQuery, HTML, CSS, and SQL Server.</li>
+                                <li>Use AI-assisted development tools to support code understanding, troubleshooting, and productivity.</li>
+                                <li>Support users, investigate issues, and improve existing systems over time.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="experience-card">
+                        <div class="experience-card__date">2015 - 2016</div>
+                        <div>
+                            <h3>Junior Developer</h3>
+                            <p class="experience-card__location">Kalamata, Greece</p>
+                            <ul class="check-list">
+                                <li>Contributed to web development tasks across front-end and back-end code.</li>
+                                <li>Built confidence with database work, support tasks, and production fixes.</li>
+                                <li>Developed a strong foundation in maintainable, user-focused software.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Comfortable across the full web application stack.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <i class="bx bx-code-alt"></i>
+                        <h3>Front End</h3>
+                        <p>HTML, CSS, JavaScript, jQuery, Bootstrap, responsive layouts, and accessible UI structure.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="bx bx-server"></i>
+                        <h3>Back End</h3>
+                        <p>C#, VB.NET, ASP.NET MVC, LINQ, Python, API-style thinking, and business logic implementation.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="bx bx-data"></i>
+                        <h3>Data</h3>
+                        <p>SQL Server, MySQL, reporting, data fixes, stored procedures, and database-backed workflows.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="bx bx-mobile-alt"></i>
+                        <h3>Mobile & Cloud</h3>
+                        <p>Android Java, Xamarin, React Native, Firebase, AWS, Azure, and practical deployment support.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="bx bx-chip"></i>
+                        <h3>AI-Assisted Development</h3>
+                        <p>Using AI tools for code exploration, debugging, documentation, refactoring ideas, and delivery support while keeping human judgement in the loop.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="work">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Selected work and side projects.</h2>
+                    <p>A few examples that show interface design, application structure, and front-end implementation.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <img src="assets/img/work1.png" alt="Chat app interface preview" class="project-card__image">
+                        <div class="project-card__body">
+                            <h3>Chat App</h3>
+                            <p>A responsive messaging interface focused on clean UI structure and interaction flow.</p>
+                            <a href="https://repetselia-chat.netlify.app/" target="_blank" rel="noreferrer">View demo <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/img/work55.png" alt="Admin dashboard preview" class="project-card__image">
+                        <div class="project-card__body">
+                            <h3>Admin Dashboard</h3>
+                            <p>A dashboard concept for scanning key metrics, navigation, and operational content quickly.</p>
+                            <a href="https://admindashboarddesign.netlify.app/" target="_blank" rel="noreferrer">View demo <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/img/work66.png" alt="To-do app preview" class="project-card__image">
+                        <div class="project-card__body">
+                            <h3>To-do App</h3>
+                            <p>A simple productivity app showing stateful UI, task flow, and front-end implementation.</p>
+                            <a href="https://todolito.netlify.app/" target="_blank" rel="noreferrer">View demo <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--contact" id="contact">
+            <div class="container contact">
+                <div class="contact__intro">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Recruiting for a developer role?</h2>
+                    <p>
+                        I am open to conversations about software development, web development, and full-stack roles where practical delivery matters.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:kristolito@hotmail.co.uk"><i class="bx bx-envelope"></i> kristolito@hotmail.co.uk</a>
+                        <a href="https://www.linkedin.com/in/kris-lito-363853ab/" target="_blank" rel="noreferrer"><i class="bx bxl-linkedin-square"></i> LinkedIn</a>
+                        <a href="https://github.com/Kristolito" target="_blank" rel="noreferrer"><i class="bx bxl-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <form action="mailto:kristolito@hotmail.co.uk" method="post" enctype="text/plain" class="contact-form" id="contact-form">
+                    <label>
+                        Name
+                        <input type="text" name="name" autocomplete="name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" autocomplete="email" required>
+                    </label>
+                    <label>
+                        Message
+                        <textarea name="message" rows="6" required></textarea>
+                    </label>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    <button class="button" type="submit">Open email draft</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; 2026 Kris Lito.</p>
+            <a href="#home">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
